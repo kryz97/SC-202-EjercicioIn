@@ -61,7 +61,7 @@ public class Calculador {
         // Aqui se van a imprimir los nombres y las cedulas de las personas que no hayan dondado, es decir la que donaron 0 
         System.out.println("Lista de personas y sus cedulas con diezmo igual a 0:");
         for (int varA : feligresesConCeroDiezmo) {
-            if (varA > 0) {
+            if (varA == 0) {
                 System.out.println("Nombre: " + feligresesNombres[varA] + ", ID: " + feligresesIDs[varA]);
             }
         }
